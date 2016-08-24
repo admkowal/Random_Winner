@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Start Kit</title>
+
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <main class="get-winner">
+        <h1 class="get-winner__head">Random Winner Generate</h1>
+
+        <div class="alert hidden-xs-up" role="alert" id="alert"></div>
+        
+        <form class="formblock">
+            <div class="form-group">
+                <input type="text" class="formblock__input" id="addContestant" placeholder="Enter contestant" data-error="Enter a valid contestant">
+            </div>
+
+            <button id="addBtn" type="submit" class="btn btn-primary">Add</button>
+        </form>
+
+        <div class="row">
+            <button type="button" id="getRandom" class="get-winner__btn">Generate!</button>
+            <output id="showRandom" class="get-winner__output">The winner is...</output>
+        </div>
+
+        <div id="contestants" class="contestants hidden-xs-up">
+            <h4>Contestants</h4>
+            <ul>
+            </ul>
+        </div>
+    </main>
+
+    <script src="js/scripts.min.js"></script>
+
+</body>
+</html>
